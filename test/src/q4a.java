@@ -48,14 +48,16 @@ public class q4a extends Applet implements KeyListener{
 	public void keyReleased(KeyEvent arg0) {
 		showStatus("Released");
 	}
-
-	@Override
-	public void keyTyped(KeyEvent e) {	
-	}
 	
 	public void paint(Graphics g)
 	{
 		g.drawString(msg,50,50);
+	}
+
+	@Override
+	public void keyTyped(KeyEvent arg0) {
+		showStatus("Key Typed");
+		
 	}
 
 }

@@ -37,6 +37,7 @@ public class servlet10 extends HttpServlet {
 		Cookie ck=new Cookie("user",user);
 		Cookie ck1=new Cookie("pan",pan);
 		response.addCookie(ck);
+		response.addCookie(ck1);
 		request.getRequestDispatcher("servlet10b").forward(request, response);
 		
 	}

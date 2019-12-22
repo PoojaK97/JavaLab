@@ -35,7 +35,13 @@ public class servlet10b extends HttpServlet {
 		
 		Cookie[]  ck=request.getCookies();
 		val=ck[0].getValue();
-		out.println("Welcome Back "+val);
+		for (Cookie cookie : ck) {
+			   if (cookie.getName().equals("pan")) {
+			out.println("Welcome Back "+val);
+			break;
+			    }
+			  }
+
 		
 		
 	}
